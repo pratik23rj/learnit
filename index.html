@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title> Learning Resources </title>
+    <style>
+        /*  css for the mobile nav close */
+        #nav-mobile-btn.close span:first-child{
+            transform: rotate(45deg);
+            top: 4px;
+            position: relative;
+            background:#1F2937;
+        }
+        #nav-mobile-btn.close span:nth-child(2){
+            transform: rotate(-45deg);
+            margin-top: 0px;
+            background:#1F2937;
+        }
+    </style>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="antialiased">
+
+    <!-- Navbar-->
+    <div class="relative  w-full h-20 px-8  border-b border-gray-200 ">
+        <div class="container flex items-center justify-between h-full max-w-6xl mx-auto">
+            <a href="#">
+                <span class="text-2xl text-gray-900 font-medium hover:text-green-500"> LearnIt </span>
+            </a>
+
+            <div id="nav" class="absolute top-0 left-0 hidden block w-full mt-20  sm:border-none sm:px-5 sm:block sm:relative sm:mt-0 sm:px-0 sm:w-auto bg-white ">
+                <nav class="flex flex-col items-center py-3  text-gray-900 sm:flex-row sm:bg-transparent sm:border-none sm:py-0">
+                    <a class="px-4 py-2 mt-2 text-lg font-medium rounded-lg  md:mt-0 md:ml-4 hover:text-black  focus:text-blue-500 hover:text-blue-500" href="#"> Programming </a>
+
+                    <a class="px-4 py-2 mt-2 text-lg font-medium rounded-lg  md:mt-0 md:ml-4 hover:text-black  focus:text-blue-500 hover:text-blue-500" href="#"> Machine Learning </a>
+
+                    <a class="px-4 py-2 mt-2 text-lg font-medium rounded-lg  md:mt-0 md:ml-4 hover:text-black  focus:text-blue-500 hover:text-blue-500" href="#"> Design </a>                   
+                </nav>
+            </div>
+
+
+
+            <!--nav button-->
+            <div id="nav-mobile-btn" class="absolute top-0 right-0  block w-8 mt-8 mr-10 cursor-pointer select-none sm:hidden sm:mt-10">
+                <span class="block w-full h-1 mt-2 duration-200 transform bg-gray-800 rounded-full sm:mt-1"></span>
+                <span class="block w-full h-1 mt-1 duration-200 transform bg-gray-800 rounded-full"></span>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="lg:mt-20 mt-10 mx-2">
+        <h3 class="text-3xl  text-center"> Find the Best Programming Courses & Tutorials </h3>
+    </div>
+    
+    <div class="mt-6 flex  shadow-sm lg:w-1/2 w-11/12  mx-auto ">
+        <span class="flex items-center  px-3 rounded-l-md border border-r-0 border-gray-300  text-gray-500 text-sm md:pl-6">
+            <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+            viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+            width="512px" height="512px">
+            <path
+              d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+          </svg>
+        </span>
+        <input type="text" name="" id="" class="w-full rounded-none rounded-r-md sm:text-sm border-gray-300 h-11 border px-2 border-l-0 py-2  focus:outline-none text-gray-800 md:text-lg" placeholder="Search for the language you want to learn: Python, Javascript...">
+      </div>
+
+    
+      <div class="my-12">
+          <div class="grid md:grid-cols-3 gap-6  md:gap-x-2 lg:gap-x-4 mx-4 md:mx-6 lg:mx-32">
+              <a href=""><div class="flex justify-start items-center px-2 mx-4 md:w-56 lg:w-60 xl:w-80 py-4 border rounded hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none duration-500"><div><img class="h-10 w-10 mx-4" src="https://hackr.io/tutorials/python/logo-python.svg" alt=""></div><div class="text-lg font-medium mx-4">Python</div></div></a>
+
+              <a href=""><div class="flex justify-start items-center px-2 mx-4 md:w-56 lg:w-60 xl:w-80 py-4 border rounded hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none duration-500"><div><img class="h-10 w-10 mx-4" src="https://hackr.io/tutorials/javascript/logo-javascript.svg" alt=""></div><div class="text-lg font-medium mx-4">JavaScript</div></div></a>
+
+              <a href=""><div class="flex justify-start items-center px-2 mx-4 md:w-56 lg:w-60 xl:w-80 py-4 border rounded hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none duration-500"><div><img class="h-10 w-10 mx-4" src="https://hackr.io/tutorials/css/logo-css.svg?ver=1587801903" alt=""></div><div class="text-lg font-medium mx-4">CSS</div></div></a>
+
+              <a href=""><div class="flex justify-start items-center px-2 mx-4 md:w-56 lg:w-60 xl:w-80 py-4 border rounded hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none duration-500"><div><img class="h-10 w-10 mx-4" src="https://hackr.io/tutorials/java/logo-java.svg?ver=1610114251" alt=""></div><div class="text-lg font-medium mx-4">Java</div></div></a>
+
+              <a href=""><div class="flex justify-start items-center px-2 mx-4 md:w-56 lg:w-60 xl:w-80 py-4 border rounded hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none duration-500"><div><img class="h-10 w-10 mx-4" src="https://hackr.io/tutorials/react/logo-react.svg?ver=1610114789" alt=""></div><div class="text-lg font-medium mx-4"> React </div></div></a>
+
+              <a href=""><div class="flex justify-start items-center px-2 mx-4 md:w-56 lg:w-60 xl:w-80 py-4 border rounded hover:shadow-lg transform hover:scale-105 motion-reduce:transform-none duration-500"><div><img class="h-10 w-10 mx-4" src="https://hackr.io/tutorials/vue-js/logo-vue-js.svg?ver=1555390471" alt=""></div><div class="text-lg font-medium mx-4"> Vue</div></div></a>
+            </div>
+      </div>
+
+    <!-- Mobile Navbar Button JS-->
+    <script>
+        if( document.getElementById('nav-mobile-btn') ){
+            document.getElementById('nav-mobile-btn').addEventListener('click', function(){
+                if( this.classList.contains('close') ){
+                    document.getElementById('nav').classList.add('hidden');
+                    this.classList.remove('close');
+                } else {
+                    document.getElementById('nav').classList.remove('hidden');
+                    this.classList.add('close');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
